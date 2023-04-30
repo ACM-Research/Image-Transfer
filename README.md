@@ -7,17 +7,7 @@
 ![poster](https://github.com/ACM-Research/Image-Transfer/blob/main/poster/poster.png?raw=true)
 
 # Introduction
-The <ins>**CycleGAN (Cycle Generative Adversarial Network)**</ins> is a technique that
-involves the automatic training of image-to-image translation models. It is an
-approach to training deep convolutional neural networks. The function of this
-network is to learn mapping between input and output images using a given set
-of datasets. This simple technique is powerful, achieving visually impressive
-results on a range of application domains.
-We have applied the same technique to build a model that can trans-
-late underwater cloudy images to clear images and thus enable efficient object
-detection in deep sea waters
-
-# About?
+The <ins>**CycleGAN (Cycle Generative Adversarial Network)**</ins> is a technique that involves the automatic training of image-to-image translation models. It is an approach to training deep convolutional neural networks. The function of this network is to learn mapping between input and output images using a given set of datasets. This simple technique is powerful, achieving visually impressive results on a range of application domains. We have applied the same technique to build a model that can translate underwater cloudy images to clear images and thus enable efficient object detection in deep sea waters.
 
 # Model
 
