@@ -4,7 +4,7 @@
 ***Team Lead:*** [Ben Bowers](https://www.linkedin.com/in/benhbowers/) <br>
 ***Participants:*** [Murtaza Khan](https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bv4eX%2B99wQFCEphySFPZ4KQ%3D%3D), Ryan Joseph, Saanvi Bala, Nivedh Koya, Ompranay Yedluri 
 
-![Colored_Image_Translation_2-1](https://user-images.githubusercontent.com/98447362/235372252-b0953e16-36f1-4f96-b747-c3265d7f107e.png)
+![poster](https://github.com/ACM-Research/Image-Transfer/blob/main/poster/poster.png?raw=true)
 
 # Introduction
 The <ins>**CycleGAN (Cycle Generative Adversarial Network)**</ins> is a technique that
@@ -34,8 +34,23 @@ To have our model properly parse our images through, we must first process the i
 - <ins>**Training the Unsupervised Model**</ins>: To obtain our unpaired (or unlabeled) data, we utilized the EVUP Dataset[^1] that consisted of approximately <ins>3200 underwater images</ins>. These had both cloudy and clear water images which were treated as unpaired. 
 - <ins>**Training the Supervised Model**</ins>: For our paired (or labeled) data, we used an underwater camera and took images of objects in clear water and used the same objects to take pictures in cloudy water to replicate the cloudiness of the sea. For better outcomes, we attempted to expand the dataset by using objects of various shapes and sizes (i.e. toy cars, keychains, water bottles, finger rings, etc.). In total, we captured <ins>284 images or 142 pairs of underwater images</ins> to train our supervised model.
 
+<p align="center">
+  <img width="450" height="250" src="https://github.com/ACM-Research/Image-Transfer/blob/main/poster/car_clear.jpg"> 
+</p>
+
+<p align="center">
+  <img width="450" height="250" src="https://github.com/ACM-Research/Image-Transfer/blob/main/poster/car_cloudy.jpg"> 
+</p>
+
 # Results
 
+<p align="center">
+  <img width="700" height="500" src="https://github.com/ACM-Research/Image-Transfer/blob/main/poster/result_main.png"> 
+</p>
+
+<p align="center">
+  <img width="700" height="500" src="https://github.com/ACM-Research/Image-Transfer/blob/main/poster/result_second.png"> 
+</p>
 
 # Processing Model
 <ins>**Adversarial loss**</ins>: This loss is used to train the discriminator network (d) to correctly classify real and fake images. It is a mean absolute error (mae) loss and is used to optimize the discriminator network.
@@ -48,7 +63,7 @@ Cycle loss (Backward cycle): This loss is used to ensure that the generated imag
 
 Paired loss: This loss is used to encourage the generated image (g1_out) to be as close as possible to the paired image (paired_img) that has some known relationship with the input image. This is also a mean absolute error (mae) loss and is used to optimize the generator network (g1).
 
-![Clear Image Translation with CycleGAN (1)](https://user-images.githubusercontent.com/98447362/235372335-b6029d22-e1d5-45c8-9574-72a5dfc932a1.png)
+![flowchart](https://github.com/ACM-Research/Image-Transfer/blob/main/poster/flowchart.jpeg?raw=true)
 
 CycleGAN, which consists of two generator networks and two discriminator networks. The overall goal of a CycleGAN is to learn a mapping between two domains, for example, between images of horses and zebras.
 
